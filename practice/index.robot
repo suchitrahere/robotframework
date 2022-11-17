@@ -7,6 +7,8 @@ ${LOGIN URL}      https://twitter.com/
 ${BROWSER}        Chrome
 ${signinbutton}     xpath=//a[@href = "/login"]
 ${Acceptallcookies}     xpath=//span[contains(@class,'css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0')]
+
+
 *** Test Cases ***
 Valid Login
     Open Browser To Login Page
