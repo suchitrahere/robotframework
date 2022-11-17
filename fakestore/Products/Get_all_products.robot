@@ -25,7 +25,7 @@ Test_products
     ${statuscode} =    Convert To String    ${response.status_code}
     Should Be Equal    ${statuscode}    200
 
-    #Verify if id field is seen in response
+    # Verify if 'id' field is seen in response body
     Log    ${response.content}
     ${body}     Set Variable   ${response.content}
     Log    ${body}
