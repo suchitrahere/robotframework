@@ -1,19 +1,12 @@
-*** Settings ***
-Documentation  Login Functionality
-Library  SeleniumLibrary
-Library    RequestsLibrary
-Library    JSONLibrary
-Library    Collections
-
-*** Variables ***
-${baseurl}      https://fakestoreapi.com
-${username}     admin
-${password}    password
-${status_code}
-${body}
-${id}
-
 *** Test Cases ***
+# Do something
+#     Open Browser    https://opensource-demo.orangehrmlive.com/    Chrome
+#     Wait Until Element Is Visible  id:txtUsername  timeout=5
+#     Input Text  id:txtUsername  Admin
+#     Input Password  id:txtPassword  admin123
+#     Click Element  id:btnLogin
+#     Element Should Be Visible  id:welcome  timeout=5
+#     Close Browser
 Login_to_get_authtoken_and_clientID
 
     Create Session    mysession    ${baseurl}
@@ -27,7 +20,3 @@ Login_to_get_authtoken_and_clientID
     Should Be Equal    ${status_code}     200
 
     ${body}= ${response.content}
-
-
-
-
