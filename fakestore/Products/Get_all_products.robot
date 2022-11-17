@@ -16,7 +16,7 @@ ${prod1}
 *** Test Cases ***
 Test_products
 
-    # Verify if all products with Key name as ID are displayed in response
+    # Create session to test API
     Create Session    mysession    ${baseurl}
     ${response} =  GET On Session    mysession   ${baseurl}/products
     
